@@ -1,10 +1,8 @@
 {
     "subdomains": [
-        "www.dulms.deltauniv.edu.eg",
         "dulms.deltauniv.edu.eg"
     ],
     "resolved_hosts": {
-        "www.dulms.deltauniv.edu.eg": "45.240.88.14",
         "dulms.deltauniv.edu.eg": "45.240.88.14"
     },
     "port_scan": {
@@ -15,15 +13,10 @@
         ]
     },
     "web_technologies": {
-        "www.dulms.deltauniv.edu.eg": {
-            "technologies": [
-                "Microsoft HTTPAPI"
-            ]
-        },
         "dulms.deltauniv.edu.eg": {
             "technologies": [
-                "Windows Server",
                 "IIS",
+                "Windows Server",
                 "Microsoft ASP.NET",
                 "jQuery"
             ]
@@ -34,6 +27,42 @@
     },
     "threat_data_ips": {
         "45.240.88.14": null
+    },
+    "otx_data": {
+        "sections": [
+            "general",
+            "geo",
+            "url_list",
+            "passive_dns",
+            "malware",
+            "whois",
+            "http_scans"
+        ],
+        "whois": "http://whois.domaintools.com/dulms.deltauniv.edu.eg",
+        "alexa": "http://www.alexa.com/siteinfo/dulms.deltauniv.edu.eg",
+        "indicator": "dulms.deltauniv.edu.eg",
+        "type": "domain",
+        "type_title": "Domain",
+        "validation": [],
+        "base_indicator": {},
+        "pulse_info": {
+            "count": 0,
+            "pulses": [],
+            "references": [],
+            "related": {
+                "alienvault": {
+                    "adversary": [],
+                    "malware_families": [],
+                    "industries": []
+                },
+                "other": {
+                    "adversary": [],
+                    "malware_families": [],
+                    "industries": []
+                }
+            }
+        },
+        "false_positive": []
     },
     "geoip_data": {
         "45.240.88.14": {

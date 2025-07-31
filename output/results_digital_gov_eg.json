@@ -1,0 +1,556 @@
+{
+    "subdomains": [
+        "tansik.digital.gov.eg",
+        "www.digital.gov.eg",
+        "www.tansik.digital.gov.eg"
+    ],
+    "resolved_hosts": {
+        "tansik.digital.gov.eg": "41.33.61.235",
+        "www.digital.gov.eg": "41.33.95.166",
+        "www.tansik.digital.gov.eg": "41.33.63.67"
+    },
+    "port_scan": {
+        "41.33.61.235": [
+            {
+                "port": 80,
+                "status": "open",
+                "service": "HTTP",
+                "ssl": false,
+                "banner": "HTTP/1.0 302 Moved Temporarily\r\nLocation: https:///\r\nServer: BigIP\r\nConnection: close\r\nContent-Length: 0",
+                "os_guess": "Unknown"
+            },
+            {
+                "port": 443,
+                "status": "open",
+                "service": "HTTPS",
+                "ssl": false,
+                "banner": "",
+                "os_guess": null
+            }
+        ],
+        "41.33.63.67": [
+            {
+                "port": 80,
+                "status": "open",
+                "service": "HTTP",
+                "ssl": false,
+                "banner": "HTTP/1.0 302 Moved Temporarily\r\nLocation: https:///\r\nServer: BigIP\r\nConnection: close\r\nContent-Length: 0",
+                "os_guess": "Unknown"
+            },
+            {
+                "port": 443,
+                "status": "open",
+                "service": "HTTPS",
+                "ssl": false,
+                "banner": null,
+                "os_guess": null
+            }
+        ],
+        "41.33.95.166": [
+            {
+                "port": 80,
+                "status": "open",
+                "service": "HTTP",
+                "ssl": false,
+                "banner": "HTTP/1.0 302 Moved Temporarily\r\nLocation: https:///\r\nServer: BigIP\r\nConnection: close\r\nContent-Length: 0",
+                "os_guess": "Unknown"
+            },
+            {
+                "port": 443,
+                "status": "open",
+                "service": "HTTPS",
+                "ssl": false,
+                "banner": "",
+                "os_guess": null
+            }
+        ]
+    },
+    "web_technologies": {
+        "tansik.digital.gov.eg": {
+            "technologies": []
+        },
+        "www.digital.gov.eg": {
+            "technologies": []
+        },
+        "www.tansik.digital.gov.eg": {
+            "technologies": [
+                "Windows Server",
+                "Microsoft ASP.NET",
+                "IIS"
+            ]
+        }
+    },
+    "threat_data_domain": {
+        "error": "Failed: 401"
+    },
+    "threat_data_ips": {
+        "41.33.61.235": null,
+        "41.33.63.67": null,
+        "41.33.95.166": null
+    },
+    "otx_data": {
+        "general": {
+            "sections": [
+                "general",
+                "geo",
+                "url_list",
+                "passive_dns",
+                "malware",
+                "whois",
+                "http_scans"
+            ],
+            "whois": "http://whois.domaintools.com/digital.gov.eg",
+            "alexa": "http://www.alexa.com/siteinfo/digital.gov.eg",
+            "indicator": "digital.gov.eg",
+            "type": "domain",
+            "type_title": "Domain",
+            "validation": [],
+            "base_indicator": {
+                "id": 3351103928,
+                "indicator": "digital.gov.eg",
+                "type": "domain",
+                "title": "",
+                "description": "",
+                "content": "",
+                "access_type": "public",
+                "access_reason": ""
+            },
+            "pulse_info": {
+                "count": 1,
+                "pulses": [
+                    {
+                        "id": "670334df57cf3a4041e86d89",
+                        "name": "AS8452 te data",
+                        "description": "",
+                        "modified": "2024-11-06T01:02:24.390000",
+                        "created": "2024-10-07T01:09:51.744000",
+                        "tags": [],
+                        "references": [],
+                        "public": 1,
+                        "adversary": "",
+                        "targeted_countries": [],
+                        "malware_families": [],
+                        "attack_ids": [],
+                        "industries": [],
+                        "TLP": "white",
+                        "cloned_from": null,
+                        "export_count": 22,
+                        "upvotes_count": 0,
+                        "downvotes_count": 0,
+                        "votes_count": 0,
+                        "locked": false,
+                        "pulse_source": "web",
+                        "validator_count": 0,
+                        "comment_count": 0,
+                        "follower_count": 0,
+                        "vote": 0,
+                        "author": {
+                            "username": "skocherhan",
+                            "id": "249290",
+                            "avatar_url": "/otxapi/users/avatar_image/media/avatars/user_249290/resized/80/avatar_3b9c358f36.png",
+                            "is_subscribed": false,
+                            "is_following": false
+                        },
+                        "indicator_type_counts": {
+                            "URL": 524,
+                            "domain": 91,
+                            "hostname": 338
+                        },
+                        "indicator_count": 953,
+                        "is_author": false,
+                        "is_subscribing": null,
+                        "subscriber_count": 138,
+                        "modified_text": "267 days ago ",
+                        "is_modified": true,
+                        "groups": [],
+                        "in_group": false,
+                        "threat_hunter_scannable": false,
+                        "threat_hunter_has_agents": 1,
+                        "related_indicator_type": "domain",
+                        "related_indicator_is_active": 1
+                    }
+                ],
+                "references": [],
+                "related": {
+                    "alienvault": {
+                        "adversary": [],
+                        "malware_families": [],
+                        "industries": []
+                    },
+                    "other": {
+                        "adversary": [],
+                        "malware_families": [],
+                        "industries": []
+                    }
+                }
+            },
+            "false_positive": []
+        },
+        "geo": {
+            "asn": "AS8452 te data",
+            "city_data": true,
+            "city": "Cairo",
+            "region": "C",
+            "continent_code": "AF",
+            "country_code3": "EGY",
+            "country_code2": "EG",
+            "subdivision": "C",
+            "latitude": 30.0778,
+            "postal_code": null,
+            "longitude": 31.2852,
+            "accuracy_radius": 1000,
+            "country_code": "EG",
+            "country_name": "Egypt",
+            "dma_code": 0,
+            "charset": 0,
+            "area_code": 0,
+            "flag_url": "/assets/images/flags/eg.png",
+            "flag_title": "Egypt"
+        },
+        "url_list": {
+            "url_list": [
+                {
+                    "url": "https://digital.gov.eg/services/536c4b7524a87e0ce3e2e8e3",
+                    "date": "2025-07-30T01:30:01",
+                    "domain": "digital.gov.eg",
+                    "hostname": "digital.gov.eg",
+                    "encoded": "https%3A//digital.gov.eg/services/536c4b7524a87e0ce3e2e8e3"
+                },
+                {
+                    "url": "https://digital.gov.eg/categories/terms/\u0637\u0644\u0628-\u0642\u064a\u062f-\u0623\u0641\u0631\u0627\u062f",
+                    "date": "2025-07-28T20:11:25",
+                    "domain": "digital.gov.eg",
+                    "hostname": "digital.gov.eg",
+                    "encoded": "https%3A//digital.gov.eg/categories/terms/%D8%B7%D9%84%D8%A8-%D9%82%D9%8A%D8%AF-%D8%A3%D9%81%D8%B1%D8%A7%D8%AF"
+                },
+                {
+                    "url": "https://digital.gov.eg/categories/terms/\u0625\u0642\u0627\u0645\u0629-\u062f\u0639\u0648\u0649-\u0645\u062f\u0646\u064a\u0629",
+                    "date": "2025-05-22T12:55:08",
+                    "domain": "digital.gov.eg",
+                    "hostname": "digital.gov.eg",
+                    "result": {
+                        "urlworker": {
+                            "http_code": 0
+                        },
+                        "safebrowsing": {
+                            "matches": []
+                        }
+                    },
+                    "httpcode": 0,
+                    "gsb": [],
+                    "encoded": "https%3A//digital.gov.eg/categories/terms/%D8%A5%D9%82%D8%A7%D9%85%D8%A9-%D8%AF%D8%B9%D9%88%D9%89-%D9%85%D8%AF%D9%86%D9%8A%D8%A9"
+                },
+                {
+                    "url": "http://tansik.digital.gov.eg/",
+                    "date": "2025-03-25T12:32:48",
+                    "domain": "digital.gov.eg",
+                    "hostname": "tansik.digital.gov.eg",
+                    "encoded": "http%3A//tansik.digital.gov.eg/"
+                },
+                {
+                    "url": "http://tansiknatiga.digital.gov.eg/",
+                    "date": "2025-03-25T12:32:48",
+                    "domain": "digital.gov.eg",
+                    "hostname": "tansiknatiga.digital.gov.eg",
+                    "encoded": "http%3A//tansiknatiga.digital.gov.eg/"
+                },
+                {
+                    "url": "https://apis.digital.gov.eg/",
+                    "date": "2024-10-09T15:00:16",
+                    "domain": "digital.gov.eg",
+                    "hostname": "apis.digital.gov.eg",
+                    "result": {
+                        "urlworker": {
+                            "http_code": 0
+                        },
+                        "safebrowsing": {
+                            "matches": []
+                        }
+                    },
+                    "httpcode": 0,
+                    "gsb": [],
+                    "encoded": "https%3A//apis.digital.gov.eg/"
+                },
+                {
+                    "url": "https://www.digital.gov.eg",
+                    "date": "2024-10-08T09:32:04",
+                    "domain": "digital.gov.eg",
+                    "hostname": "www.digital.gov.eg",
+                    "encoded": "https%3A//www.digital.gov.eg"
+                },
+                {
+                    "url": "https://analytics.digital.gov.eg",
+                    "date": "2024-10-08T09:32:04",
+                    "domain": "digital.gov.eg",
+                    "hostname": "analytics.digital.gov.eg",
+                    "result": {
+                        "urlworker": {
+                            "http_code": 0
+                        },
+                        "safebrowsing": {
+                            "matches": []
+                        }
+                    },
+                    "httpcode": 0,
+                    "gsb": [],
+                    "encoded": "https%3A//analytics.digital.gov.eg"
+                },
+                {
+                    "url": "http://www.digital.gov.eg",
+                    "date": "2024-10-08T09:18:17",
+                    "domain": "digital.gov.eg",
+                    "hostname": "www.digital.gov.eg",
+                    "encoded": "http%3A//www.digital.gov.eg"
+                },
+                {
+                    "url": "http://analytics.digital.gov.eg",
+                    "date": "2024-10-08T09:18:17",
+                    "domain": "digital.gov.eg",
+                    "hostname": "analytics.digital.gov.eg",
+                    "result": {
+                        "urlworker": {
+                            "http_code": 0
+                        },
+                        "safebrowsing": {
+                            "matches": []
+                        }
+                    },
+                    "httpcode": 0,
+                    "gsb": [],
+                    "encoded": "http%3A//analytics.digital.gov.eg"
+                }
+            ],
+            "page_num": 1,
+            "limit": 10,
+            "paged": true,
+            "has_next": true,
+            "full_size": 26,
+            "actual_size": 26
+        },
+        "passive_dns": {
+            "passive_dns": [
+                {
+                    "address": "41.33.95.173",
+                    "first": "2024-10-14T14:39:02",
+                    "last": "2024-10-14T14:39:43",
+                    "hostname": "apis.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/apis.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.95.177",
+                    "first": "2024-10-13T09:18:25",
+                    "last": "2024-10-13T09:36:41",
+                    "hostname": "analytics.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/analytics.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.61.236",
+                    "first": "2024-08-27T17:25:36",
+                    "last": "2024-08-28T01:06:06",
+                    "hostname": "tansiknatiga.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansiknatiga.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.63.68",
+                    "first": "2024-08-27T17:25:36",
+                    "last": "2024-08-28T01:06:06",
+                    "hostname": "tansiknatiga.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansiknatiga.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.63.67",
+                    "first": "2024-05-13T06:07:39",
+                    "last": "2024-07-24T23:13:22",
+                    "hostname": "tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.61.235",
+                    "first": "2024-05-13T06:07:39",
+                    "last": "2024-07-24T23:13:22",
+                    "hostname": "tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.95.166",
+                    "first": "2022-10-02T07:00:15",
+                    "last": "2025-05-26T16:31:08",
+                    "hostname": "digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.61.234",
+                    "first": "2022-07-25T11:52:12",
+                    "last": "2023-03-13T11:54:54",
+                    "hostname": "tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.63.66",
+                    "first": "2022-07-25T11:52:12",
+                    "last": "2023-03-13T11:54:53",
+                    "hostname": "www.tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/www.tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.61.234",
+                    "first": "2022-07-25T11:52:12",
+                    "last": "2023-03-13T11:54:53",
+                    "hostname": "www.tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/www.tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "41.33.63.66",
+                    "first": "2022-07-25T11:52:12",
+                    "last": "2023-03-13T11:54:54",
+                    "hostname": "tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                },
+                {
+                    "address": "193.227.9.10",
+                    "first": "2022-07-17T10:11:42",
+                    "last": "2022-07-17T10:12:48",
+                    "hostname": "tansik.digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/tansik.digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS2561 egyptian universities network (eun)"
+                },
+                {
+                    "address": "156.200.96.221",
+                    "first": "2019-10-23T22:24:36",
+                    "last": "2022-05-30T17:35:20",
+                    "hostname": "digital.gov.eg",
+                    "record_type": "A",
+                    "indicator_link": "/indicator/hostname/digital.gov.eg",
+                    "flag_url": "assets/images/flags/eg.png",
+                    "flag_title": "Egypt",
+                    "asset_type": "hostname",
+                    "asn": "AS8452 te data"
+                }
+            ],
+            "count": 13
+        },
+        "malware": null,
+        "whois": {
+            "data": [],
+            "count": 0,
+            "related": []
+        },
+        "http_scans": {
+            "Error": "No http scans record, only got : {'status': 'ok', 'cached': True, 'data': {'host': 'digital.gov.eg', 'scanRecord': {'hostname': ''}, 'scan_date': '2024-01-14T05:08:25.748000'}}"
+        }
+    },
+    "geoip_data": {
+        "41.33.61.235": {
+            "country": "Egypt",
+            "region": "Cairo Governorate",
+            "city": "Cairo",
+            "lat": 30.0507,
+            "lon": 31.2489,
+            "isp": "TE Data"
+        },
+        "41.33.63.67": {
+            "country": "Egypt",
+            "region": "Cairo Governorate",
+            "city": "Cairo",
+            "lat": 30.0507,
+            "lon": 31.2489,
+            "isp": "TE Data"
+        },
+        "41.33.95.166": {
+            "country": "Egypt",
+            "region": "Cairo Governorate",
+            "city": "Cairo",
+            "lat": 30.0507,
+            "lon": 31.2489,
+            "isp": "TE Data"
+        }
+    },
+    "whois_data": {
+        "domain_name": null,
+        "registrar": null,
+        "creation_date": "None",
+        "expiration_date": "None",
+        "name_servers": null,
+        "emails": null
+    },
+    "subdomain_details": [
+        {
+            "subdomain": "tansik.digital.gov.eg",
+            "ip": "41.33.61.235",
+            "cname": null,
+            "is_live": true
+        },
+        {
+            "subdomain": "www.digital.gov.eg",
+            "ip": "41.33.95.166",
+            "cname": null,
+            "is_live": true
+        },
+        {
+            "subdomain": "www.tansik.digital.gov.eg",
+            "ip": "41.33.63.67",
+            "cname": null,
+            "is_live": true
+        }
+    ],
+    "execution_time_seconds": 35.43
+}

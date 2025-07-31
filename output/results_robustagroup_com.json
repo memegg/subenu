@@ -1,19 +1,144 @@
 {
-    "subdomains": [],
-    "resolved_hosts": {},
-    "port_scan": {},
-    "web_technologies": {},
+    "subdomains": [
+        "activation.robustagroup.com",
+        "*.robustagroup.com",
+        "academy.robustagroup.com",
+        "staging.robustagroup.com",
+        "robustagroup.com",
+        "*.activation.robustagroup.com",
+        "events.robustagroup.com"
+    ],
+    "resolved_hosts": {
+        "academy.robustagroup.com": "89.117.139.135",
+        "staging.robustagroup.com": "172.67.180.198",
+        "robustagroup.com": "172.67.180.198",
+        "events.robustagroup.com": "199.60.103.31"
+    },
+    "port_scan": {
+        "199.60.103.31": [
+            80,
+            443
+        ],
+        "89.117.139.135": [
+            21,
+            80,
+            443,
+            3306
+        ],
+        "172.67.180.198": [
+            80,
+            443
+        ]
+    },
+    "web_technologies": {
+        "academy.robustagroup.com": {
+            "technologies": [
+                "LiteSpeed"
+            ]
+        },
+        "staging.robustagroup.com": {
+            "technologies": [
+                "Google Tag Manager",
+                "Vue.js",
+                "Cloudflare",
+                "Google Font API"
+            ]
+        },
+        "robustagroup.com": {
+            "technologies": [
+                "Google Tag Manager",
+                "Vue.js",
+                "Cloudflare",
+                "Google Font API"
+            ]
+        },
+        "events.robustagroup.com": {
+            "technologies": [
+                "jQuery",
+                "HubSpot",
+                "Cloudflare"
+            ]
+        }
+    },
     "threat_data_domain": {
         "error": "Failed: 401"
     },
-    "threat_data_ips": {},
-    "geoip_data": {},
+    "threat_data_ips": {
+        "199.60.103.31": null,
+        "89.117.139.135": null,
+        "172.67.180.198": null
+    },
+    "otx_data": {
+        "sections": [
+            "general",
+            "geo",
+            "url_list",
+            "passive_dns",
+            "malware",
+            "whois",
+            "http_scans"
+        ],
+        "whois": "http://whois.domaintools.com/robustagroup.com",
+        "alexa": "http://www.alexa.com/siteinfo/robustagroup.com",
+        "indicator": "robustagroup.com",
+        "type": "domain",
+        "type_title": "Domain",
+        "validation": [],
+        "base_indicator": {},
+        "pulse_info": {
+            "count": 0,
+            "pulses": [],
+            "references": [],
+            "related": {
+                "alienvault": {
+                    "adversary": [],
+                    "malware_families": [],
+                    "industries": []
+                },
+                "other": {
+                    "adversary": [],
+                    "malware_families": [],
+                    "industries": []
+                }
+            }
+        },
+        "false_positive": []
+    },
+    "geoip_data": {
+        "199.60.103.31": {
+            "country": "United States",
+            "region": "Massachusetts",
+            "city": "Cambridge",
+            "lat": 42.3698,
+            "lon": -71.0774,
+            "isp": "Cloudflare London, LLC"
+        },
+        "89.117.139.135": {
+            "country": "United States",
+            "region": "Arizona",
+            "city": "Phoenix",
+            "lat": 33.4532,
+            "lon": -112.0748,
+            "isp": "HOSTINGER US"
+        },
+        "172.67.180.198": {
+            "country": "Canada",
+            "region": "Ontario",
+            "city": "Toronto",
+            "lat": 43.6532,
+            "lon": -79.3832,
+            "isp": "Cloudflare, Inc."
+        }
+    },
     "whois_data": {
-        "domain_name": null,
-        "registrar": null,
-        "creation_date": "None",
-        "expiration_date": "None",
-        "name_servers": null,
-        "emails": null
+        "domain_name": "ROBUSTAGROUP.COM",
+        "registrar": "Cloudflare, Inc.",
+        "creation_date": "2023-02-28 10:20:15",
+        "expiration_date": "2027-02-28 10:20:15",
+        "name_servers": [
+            "ELLE.NS.CLOUDFLARE.COM",
+            "LARS.NS.CLOUDFLARE.COM"
+        ],
+        "emails": "registrar-abuse@cloudflare.com"
     }
 }

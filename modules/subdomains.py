@@ -1,11 +1,10 @@
 import requests
 import socket
+import dns.resolver  # pip install dnspython
+import http.client
 
 
 def get_subdomains_crtsh(domain: str) -> set[str]:
-    """
-    Retrieves subdomains for the given domain using crt.sh.
-    """
     url = f"https://crt.sh/?q=%25.{domain}&output=json"
     try:
         response = requests.get(url, timeout=20)
@@ -25,9 +24,6 @@ def get_subdomains_crtsh(domain: str) -> set[str]:
 
 
 def get_subdomains_hackertarget(domain: str) -> set[str]:
-    """
-    Retrieves subdomains for the given domain using HackerTarget API.
-    """
     url = f"https://api.hackertarget.com/hostsearch/?q={domain}"
     try:
         response = requests.get(url, timeout=15)
@@ -46,19 +42,45 @@ def get_subdomains_hackertarget(domain: str) -> set[str]:
     return subdomains
 
 
-def get_subdomains_with_ips(domain: str) -> dict[str, str | None]:
-    """
-    Retrieves subdomains from multiple sources and resolves their IPs.
-    Returns: {subdomain: ip or None if resolution fails}
-    """
+def resolve_cname(subdomain: str) -> str | None:
+    try:
+        answers = dns.resolver.resolve(subdomain, 'CNAME')
+        for rdata in answers:
+            return str(rdata.target).rstrip('.')  # remove trailing dot
+    except (dns.resolver.NoAnswer, dns.resolver.NXDOMAIN, dns.exception.Timeout):
+        return None
+
+
+def is_subdomain_live(subdomain: str) -> bool:
+    try:
+        conn = http.client.HTTPConnection(subdomain, timeout=3)
+        conn.request("HEAD", "/")
+        response = conn.getresponse()
+        return response.status < 500  # consider 2xx–4xx as live
+    except Exception:
+        return False
+
+
+def get_subdomains_with_details(domain: str) -> list[dict]:
     all_subdomains = get_subdomains_crtsh(domain) | get_subdomains_hackertarget(domain)
-    resolved = {}
+    results = []
 
     for sub in all_subdomains:
-        try:
-            ip = socket.gethostbyname(sub)
-        except socket.gaierror:
-            ip = None
-        resolved[sub] = ip
+        entry = {
+            "subdomain": sub,
+            "ip": None,
+            "cname": None,
+            "is_live": False
+        }
 
-    return resolved
+        try:
+            entry["ip"] = socket.gethostbyname(sub)
+        except socket.gaierror:
+            pass
+
+        entry["cname"] = resolve_cname(sub)
+        entry["is_live"] = is_subdomain_live(sub)
+
+        results.append(entry)
+
+    return results
