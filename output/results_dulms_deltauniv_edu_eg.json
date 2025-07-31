@@ -1,0 +1,56 @@
+{
+    "subdomains": [
+        "www.dulms.deltauniv.edu.eg",
+        "dulms.deltauniv.edu.eg"
+    ],
+    "resolved_hosts": {
+        "www.dulms.deltauniv.edu.eg": "45.240.88.14",
+        "dulms.deltauniv.edu.eg": "45.240.88.14"
+    },
+    "port_scan": {
+        "45.240.88.14": [
+            80,
+            443,
+            3389
+        ]
+    },
+    "web_technologies": {
+        "www.dulms.deltauniv.edu.eg": {
+            "technologies": [
+                "Microsoft HTTPAPI"
+            ]
+        },
+        "dulms.deltauniv.edu.eg": {
+            "technologies": [
+                "Windows Server",
+                "IIS",
+                "Microsoft ASP.NET",
+                "jQuery"
+            ]
+        }
+    },
+    "threat_data_domain": {
+        "error": "Failed: 401"
+    },
+    "threat_data_ips": {
+        "45.240.88.14": null
+    },
+    "geoip_data": {
+        "45.240.88.14": {
+            "country": "Egypt",
+            "region": "Giza",
+            "city": "Giza",
+            "lat": 30.0046,
+            "lon": 31.2044,
+            "isp": "LINKdotNET AS number"
+        }
+    },
+    "whois_data": {
+        "domain_name": null,
+        "registrar": null,
+        "creation_date": "None",
+        "expiration_date": "None",
+        "name_servers": null,
+        "emails": null
+    }
+}

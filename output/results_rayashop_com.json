@@ -1,0 +1,79 @@
+{
+    "subdomains": [
+        "www.rayashop.com",
+        "l.rayashop.com",
+        "admin.rayashop.com",
+        "test.rayashop.com"
+    ],
+    "resolved_hosts": {
+        "www.rayashop.com": "172.67.68.242",
+        "l.rayashop.com": "172.67.68.242",
+        "admin.rayashop.com": "104.248.245.114",
+        "test.rayashop.com": "104.26.10.126"
+    },
+    "port_scan": {
+        "104.26.10.126": [
+            80,
+            443
+        ],
+        "172.67.68.242": [
+            80,
+            443
+        ],
+        "104.248.245.114": [
+            22,
+            80,
+            443
+        ]
+    },
+    "web_technologies": {},
+    "threat_data_domain": {
+        "error": "Failed: 401"
+    },
+    "threat_data_ips": {
+        "104.26.10.126": null,
+        "172.67.68.242": null,
+        "104.248.245.114": null
+    },
+    "geoip_data": {
+        "104.26.10.126": {
+            "country": "Canada",
+            "region": "Ontario",
+            "city": "Toronto",
+            "lat": 43.6532,
+            "lon": -79.3832,
+            "isp": "Cloudflare, Inc."
+        },
+        "172.67.68.242": {
+            "country": "Canada",
+            "region": "Ontario",
+            "city": "Toronto",
+            "lat": 43.6532,
+            "lon": -79.3832,
+            "isp": "Cloudflare, Inc."
+        },
+        "104.248.245.114": {
+            "country": "Germany",
+            "region": "Hesse",
+            "city": "Frankfurt am Main",
+            "lat": 50.1169,
+            "lon": 8.6837,
+            "isp": "DigitalOcean, LLC"
+        }
+    },
+    "whois_data": {
+        "domain_name": "RAYASHOP.COM",
+        "registrar": "Register.com - Network Solutions, LLC",
+        "creation_date": "2005-11-22 15:08:50",
+        "expiration_date": "2025-11-22 15:08:50",
+        "name_servers": [
+            "BURT.NS.CLOUDFLARE.COM",
+            "TORI.NS.CLOUDFLARE.COM"
+        ],
+        "emails": [
+            "domain.operations@web.com",
+            "kf77e4rt36j@networksolutionsprivateregistration.com",
+            "bd49t6b95h4@networksolutionsprivateregistration.com"
+        ]
+    }
+}

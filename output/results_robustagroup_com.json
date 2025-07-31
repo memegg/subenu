@@ -1,0 +1,19 @@
+{
+    "subdomains": [],
+    "resolved_hosts": {},
+    "port_scan": {},
+    "web_technologies": {},
+    "threat_data_domain": {
+        "error": "Failed: 401"
+    },
+    "threat_data_ips": {},
+    "geoip_data": {},
+    "whois_data": {
+        "domain_name": null,
+        "registrar": null,
+        "creation_date": "None",
+        "expiration_date": "None",
+        "name_servers": null,
+        "emails": null
+    }
+}

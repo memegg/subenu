@@ -1,0 +1,31 @@
+{
+    "subdomains": [],
+    "resolved_hosts": {},
+    "port_scan": {},
+    "web_technologies": {},
+    "threat_data_domain": {
+        "error": "Failed: 401"
+    },
+    "threat_data_ips": {},
+    "geoip_data": {},
+    "whois_data": {
+        "domain_name": "RAYSHOP.COM",
+        "registrar": "MarkMonitor, Inc.",
+        "creation_date": "[datetime.datetime(1999, 7, 1, 9, 7, 35), datetime.datetime(1999, 7, 1, 9, 7, 35, tzinfo=datetime.timezone.utc)]",
+        "expiration_date": "[datetime.datetime(2026, 7, 1, 9, 7, 35), datetime.datetime(2026, 7, 1, 0, 0, tzinfo=datetime.timezone.utc)]",
+        "name_servers": [
+            "NS1.MARKMONITOR.COM",
+            "NS2.MARKMONITOR.COM",
+            "NS3.MARKMONITOR.COM",
+            "NS4.MARKMONITOR.COM",
+            "NS5.MARKMONITOR.COM",
+            "NS6.MARKMONITOR.COM",
+            "NS7.MARKMONITOR.COM"
+        ],
+        "emails": [
+            "abusecomplaints@markmonitor.com",
+            "domains@flir.com",
+            "whoisrequest@markmonitor.com"
+        ]
+    }
+}
