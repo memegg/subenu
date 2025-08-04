@@ -1,0 +1,31 @@
+name: Run Subenu
+
+on:
+  workflow_dispatch:  # تقدر تشغليه يدوي من GitHub
+  push:
+    branches: [ main ]  # أو لما تعملي push على الفرع الرئيسي
+    paths:
+      - '**.py'
+      - '**.json'
+      - requirements.txt
+
+jobs:
+  run-subenu:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Subenu
+      run: python main.py
